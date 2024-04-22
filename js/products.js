@@ -67,19 +67,18 @@ const products = [
 // Function to generate HTML for a single product
 function generateProductHTML(product) {
   return `
-<div class="col-6 col-md-4 col-lg-3 mb-5">
-    <a class="product-item" href="javascript:void(0)" onclick="navigateToProduct('${product.name}')">
-        <div class="product-thumbnail-wrapper">
-            <img src="${product.image}" class="img-fluid product-thumbnail">
-        </div>
-        <h3 class="product-title">${product.name}</h3>
-        <strong class="product-price">$${product.price}.00</strong>
-        <span class="icon-cross">
-            <img src="images/cross.svg" class="img-fluid">
-        </span>
-    </a>
-</div>
-
+    <div class="col-6 col-md-4 col-lg-3 mb-5">
+        <a class="product-item" href="single-product.html?${product.href}">
+            <div class="product-thumbnail-wrapper">
+                <img src="${product.image}" class="img-fluid product-thumbnail">
+            </div>
+            <h3 class="product-title">${product.name}</h3>
+            <strong class="product-price">$${product.price}.00</strong>
+            <span class="icon-cross">
+                <img src="images/cross.svg" class="img-fluid">
+            </span>
+        </a>
+    </div>
     `;
 }
 
