@@ -60,9 +60,9 @@ function generateProductList() {
               <div class="product-detail-list">
                 <h5>Details</h5>
                 <ul>
-                  ${product.details
-                    .map((detail) => `<li>${detail}</li>`)
-                    .join("")}
+                  ${product?.details
+                    ?.map((detail) => `<li>${detail}</li>`)
+                    ?.join("")}
                 </ul>
               </div>
               <button class="btn add-query-btn text-uppercase">
@@ -78,11 +78,5 @@ function generateProductList() {
   }
 }
 
-document.onreadystatechange = function () {
-  if (document.readyState !== "complete") {
-    const productList = document.querySelector(".single-product-main");
-    productList.textContent = "Loading...";
-  } else {
     generateProductList();
-  }
-};
+
