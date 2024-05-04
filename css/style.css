@@ -383,7 +383,6 @@ a.more {
 .feature .icon {
   display: inline-block;
   position: relative;
-  margin-bottom: 20px;
 }
 .feature .icon:before {
   content: "";
