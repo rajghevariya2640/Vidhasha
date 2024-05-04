@@ -42,12 +42,22 @@ a.more {
 .custom-navbar {
   background: #3b5d50 !important;
   padding-top: 20px;
-  padding-bottom: 20px;
 }
 .custom-navbar .navbar-brand {
   font-size: 32px;
   font-weight: 600;
 }
+
+.custom-navbar .navbar-brand .hero-img-wrap img {
+  width: 235px;
+}
+
+@media (max-width: 400px) {
+  .custom-navbar .navbar-brand .hero-img-wrap img {
+    width: 200px;
+  }
+}
+
 .custom-navbar .navbar-brand > span {
   opacity: 0.4;
 }
@@ -135,7 +145,7 @@ a.more {
 }
 @media (min-width: 992px) {
   .hero {
-    padding: calc(8rem - 30px) 0 4rem 0;
+    padding: calc(6rem - 30px) 0 4rem 0;
   }
 }
 .hero .intro-excerpt {
@@ -947,24 +957,24 @@ textarea {
   border: 1px solid #3b5d50;
 }
 
-.single-product-main .product-name h2{
+.single-product-main .product-name h2 {
   font-size: 30px;
 }
-.single-product-main .product-name p{
+.single-product-main .product-name p {
   padding: 2px 10px;
   font-size: 14px;
-  color: #2C742F;
-  background-color: #20B52620;
+  color: #2c742f;
+  background-color: #20b52620;
   border-radius: 6px;
 }
-.product-detail-list ul{
+.product-detail-list ul {
   padding-left: 16px;
 }
-.add-query-btn{
+.add-query-btn {
   background-color: #3b5d50;
   border: 1px solid transparent;
 }
-.add-query-btn:hover{
+.add-query-btn:hover {
   background-color: transparent;
   border-color: #3b5d50;
   color: #3b5d50;
